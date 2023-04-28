@@ -1,0 +1,65 @@
+.home {
+    background: #4AADE4;
+}
+
+.titulo {
+    font-family: 'Cinzel', serif;
+    font-size: 4rem;
+    color: #1a1a1a;
+    text-shadow: 2px 2px #2a85b6;
+    text-align: center;
+ 
+}
+
+.content{
+    width: 92%;
+    height: 1236px;
+    padding: 0 60px;
+    
+  }
+
+.explain-game{
+    text-align: justify;
+}
+
+.btn-back {
+    display: block; /* hace que el botón sea un elemento en bloque */
+    margin: 0 auto; /* establece un margen automático para centrar horizontalmente el botón */
+    margin-top: 30px;
+    font-size: 1.2rem; /* ajusta el tamaño de la fuente según tus necesidades */
+    padding: 10px; /* ajusta el padding según tus necesidades */
+    background-color: #2a85b6; /* ajusta el color de fondo según tus necesidades */
+    color: #fff; /* ajusta el color de fuente según tus necesidades */
+    border: none; /* quita el borde del botón */
+    border-radius: 5px; /* agrega esquinas redondeadas al botón */
+    cursor: pointer; /* cambia el cursor al pasar por encima del botón */
+    
+}
+  
+.btn-back:hover {
+    background-color: #1a5f7f; /* cambia el color de fondo cuando se pasa el mouse por encima */
+    color: #fff; /* cambia el color de fuente cuando se pasa el mouse por encima */
+    transition: background-color 0.3s ease; /* agrega una transición suave de 0.3 segundos para el cambio de color de fondo */
+}
+
+/*phones-celulares*/
+@media screen and (max-width: 780px) {
+    .titulo {
+    font-size: 2.5rem;
+    }
+    .content {
+    height: auto;
+    padding: 0 20px;
+    }
+    .explain-game {
+    font-size: 0.9rem;
+    }
+    .btn-back {
+    font-size: 1rem;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+      }
+    h2 {text-align: justify;}
+}

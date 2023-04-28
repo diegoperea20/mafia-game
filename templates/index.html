@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Game of Mafia</title>
+</head>
+<body class="home">
+    <h1 class="titulo">Game of  Mafia</h1>
+    {% if mensaje %}
+    <h1 id="mensaje" class="mensaje">{{ mensaje }}</h1>
+    {% endif %}
+    
+    <form method="POST" action="{{ url_for('configurar') }}" id="form-configurar">
+        <div class="container">
+
+
+            <div class="left">
+                <label for="civiles">Civilians Number</label>
+            </br>
+                <input class="civiles-frame" type="number" id="civiles" name="civiles" required min="1">
+    
+            </div>
+            <div class="right">
+                <label for="mafia">Mafia Number</label>
+            </br>
+                <input class="mafia-frame" type="number" id="mafia" name="mafia" required min="1" >
+    
+            </div>
+           
+        </div>
+      
+            <input class="btn-start-game"   type="submit"  value="Start Game">
+        
+       
+    </form>
+
+    
+        <form method="POST" action="{{ url_for('jugar') }}" id="nombre-container" >
+            <div id="jugadores-container" class="container-name" >
+                <div class="container-name-label"> 
+                    <label for="nombre">Enter your name:</label>
+                </div>
+                <div class="container-name-box">
+                    <input class="container-name-box-text"    type="text" id="nombre" name="nombre" required inputmode="text" >
+                    <input  class="btn-send"   type="submit" value="Send">
+
+                </div>
+            </div>
+        </form>
+                
+        {% if mensaje_rol %}
+        <h1 id="mensaje_rol"  class="mensaje-rol">{{ mensaje_rol }}</h1>
+        {% endif %}
+        {% if nombre %}
+       
+        <button  class="btn-next"  onclick="siguiente()">Next</button>
+        {% endif %}
+        
+
+    <script>
+        function siguiente() {
+            document.getElementById("nombre").value = "";
+            document.querySelector("#mensaje_rol").style.display = "none";
+        }
+    </script>
+    <div class="div-list">
+    <ul class="list">
+        {% for elemento in nombresjugador %}
+          <li>{{ elemento }}</li>
+        {% endfor %}
+        </ul>
+    </div>    
+
+
+
+<form method="POST" action="{{ url_for('eliminar') }}" id="form-eliminar">
+    <div class="container-name">
+        <div class="container-name-label">
+            <label for="nombre_eliminar">Name of the player to eliminate:</label>
+        </div>
+        <div class="container-name-box">
+        <input class="container-name-box-text" type="text" id="nombre_eliminar" name="nombre_eliminar" required inputmode="text"  >
+        <input class="btn-delete" type="submit" value="Delete">
+        </div>
+    </div>
+</form>
+
+{% if mensaje_delete %}
+        <h1 id="mensaje_delete"  class="mensaje-delete">{{ mensaje_delete }}</h1>
+        {% endif %}
+<form method="POST" action="/">
+    <input class="btn-start-game-again" type="submit" value="Play Again">
+  </form>
+  <form method="POST" action="/how">
+    <input class="btn-start-game-again" type="submit" value="How to play">
+  </form>
+  
+
+
+
+{% if mensaje_limite %}
+        <h1 id="mensaje_limite" class="mensaje-limite">{{ mensaje_limite }}</h1>
+        
+        {% endif %}
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+

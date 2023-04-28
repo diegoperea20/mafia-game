@@ -1,0 +1,315 @@
+body::-webkit-scrollbar {
+  width: 7px;
+  background: #18191B;
+}
+body::-webkit-scrollbar-thumb{
+  background: white;
+}
+
+.titulo {
+    font-family: 'Cinzel', serif;
+    font-size: 4rem;
+    color: #1a1a1a;
+    text-shadow: 2px 2px #2a85b6;
+    text-align: center;
+ 
+}
+
+.home {
+  background: #4AADE4;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.left {
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.left label {
+  font-family: 'Cinzel', serif;
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+  font-weight: bold;
+}
+
+
+.civiles-frame {
+  width: 58%;
+  height: 466px;
+  font-weight: 700;
+  font-size: 368px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  border-radius: 10%;
+  color: #093efe;
+  background-color: white;
+  box-shadow: 0 0 30px #093efe;
+  border: 2px solid #093efe;
+}
+
+
+
+.right {
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.right label{
+  font-family: 'Cinzel', serif;
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+  font-weight: bold;
+}
+.mafia-frame{
+  width: 58%;
+  height: 466px;
+  font-weight: 700;
+  font-size: 368px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  border-radius: 10%;
+  background-color: white;
+  box-shadow: 0 0 30px #191d29;
+  border: 2px solid #191d29;
+}
+.btn-start-game {
+  display: block; /* hace que el botón sea un elemento en bloque */
+  margin: 0 auto; /* establece un margen automático para centrar horizontalmente el botón */
+  font-size: 1.2rem; /* ajusta el tamaño de la fuente según tus necesidades */
+  padding: 10px; /* ajusta el padding según tus necesidades */
+  background-color: #2a85b6; /* ajusta el color de fondo según tus necesidades */
+  color: #fff; /* ajusta el color de fuente según tus necesidades */
+  border: none; /* quita el borde del botón */
+  border-radius: 5px; /* agrega esquinas redondeadas al botón */
+  cursor: pointer; /* cambia el cursor al pasar por encima del botón */
+}
+
+.btn-start-game:hover {
+  background-color: #1a5f7f; /* cambia el color de fondo cuando se pasa el mouse por encima */
+  color: #fff; /* cambia el color de fuente cuando se pasa el mouse por encima */
+  transition: background-color 0.3s ease; /* agrega una transición suave de 0.3 segundos para el cambio de color de fondo */
+}
+
+.container-name {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 2% 2%;
+}
+
+.container-name-label {
+  flex: 1;
+  text-align: left;
+  width: 10%;
+  font-weight: bold;
+  
+}
+
+.container-name-box {
+  flex: 1;
+  text-align: right;
+}
+.container-name-label, .container-name-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-name-label label{
+  font-family: 'Cinzel', serif;
+  font-size: 32px;
+}
+.container-name-box-text{
+  width: 60%;
+  height: 50px;
+  font-size: 40px;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+}
+
+.btn-start-game-again {
+  display: block; /* hace que el botón sea un elemento en bloque */
+  margin: 0 auto; /* establece un margen automático para centrar horizontalmente el botón */
+  margin-top: 30px;
+  font-size: 1.2rem; /* ajusta el tamaño de la fuente según tus necesidades */
+  padding: 10px; /* ajusta el padding según tus necesidades */
+  background-color: #2a85b6; /* ajusta el color de fondo según tus necesidades */
+  color: #fff; /* ajusta el color de fuente según tus necesidades */
+  border: none; /* quita el borde del botón */
+  border-radius: 5px; /* agrega esquinas redondeadas al botón */
+  cursor: pointer; /* cambia el cursor al pasar por encima del botón */
+}
+
+.btn-start-game-again:hover {
+  background-color: #1a5f7f; /* cambia el color de fondo cuando se pasa el mouse por encima */
+  color: #fff; /* cambia el color de fuente cuando se pasa el mouse por encima */
+  transition: background-color 0.3s ease; /* agrega una transición suave de 0.3 segundos para el cambio de color de fondo */
+}
+
+.btn-next {
+  display: block; /* hace que el botón sea un elemento en bloque */
+  margin: 0 auto; /* establece un margen automático para centrar horizontalmente el botón */
+  font-size: 1.2rem; /* ajusta el tamaño de la fuente según tus necesidades */
+  padding: 10px; /* ajusta el padding según tus necesidades */
+  background-color: #28cd88; /* ajusta el color de fondo según tus necesidades */
+  color: #fff; /* ajusta el color de fuente según tus necesidades */
+  border: none; /* quita el borde del botón */
+  border-radius: 5px; /* agrega esquinas redondeadas al botón */
+  cursor: pointer; /* cambia el cursor al pasar por encima del botón */
+}
+
+.btn-next:hover {
+  background-color: #1d8572; /* cambia el color de fondo cuando se pasa el mouse por encima */
+  color: #fff; /* cambia el color de fuente cuando se pasa el mouse por encima */
+  transition: background-color 0.3s ease; /* agrega una transición suave de 0.3 segundos para el cambio de color de fondo */
+}
+
+.btn-send{
+  display: block; /* hace que el botón sea un elemento en bloque */
+  margin: 0 auto; /* establece un margen automático para centrar horizontalmente el botón */
+  font-size: 1.2rem; /* ajusta el tamaño de la fuente según tus necesidades */
+  padding: 10px; /* ajusta el padding según tus necesidades */
+  background-color: #28cd88; /* ajusta el color de fondo según tus necesidades */
+  color: #fff; /* ajusta el color de fuente según tus necesidades */
+  border: none; /* quita el borde del botón */
+  border-radius: 5px; /* agrega esquinas redondeadas al botón */
+  cursor: pointer; /* cambia el cursor al pasar por encima del botón */
+}
+
+.btn-send:hover {
+  background-color: #1d8572; /* cambia el color de fondo cuando se pasa el mouse por encima */
+  color: #fff; /* cambia el color de fuente cuando se pasa el mouse por encima */
+  transition: background-color 0.3s ease; /* agrega una transición suave de 0.3 segundos para el cambio de color de fondo */
+}
+
+.btn-delete{
+  display: block; /* hace que el botón sea un elemento en bloque */
+  margin: 0 auto; /* establece un margen automático para centrar horizontalmente el botón */
+  font-size: 1.2rem; /* ajusta el tamaño de la fuente según tus necesidades */
+  padding: 10px; /* ajusta el padding según tus necesidades */
+  background-color: #e5416f; /* ajusta el color de fondo según tus necesidades */
+  color: #fff; /* ajusta el color de fuente según tus necesidades */
+  border: none; /* quita el borde del botón */
+  border-radius: 5px; /* agrega esquinas redondeadas al botón */
+  cursor: pointer; /* cambia el cursor al pasar por encima del botón */
+}
+
+.btn-delete:hover {
+  background-color: #ad1717; /* cambia el color de fondo cuando se pasa el mouse por encima */
+  color: #fff; /* cambia el color de fuente cuando se pasa el mouse por encima */
+  transition: background-color 0.3s ease; /* agrega una transición suave de 0.3 segundos para el cambio de color de fondo */
+}
+
+.mensaje{
+  font-family: 'Cinzel', serif;
+  font-size: 2rem;
+  text-align: center;
+  background-color: #c1df17;
+  padding: 1rem;
+  border: 2px solid #ff6666;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+
+}
+
+.mensaje-rol{
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  color: rgb(24, 1, 1);
+  font-size: 60px;
+  font-weight: bold;
+}
+
+
+.div-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.list{
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  color: rgb(24, 1, 1);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.list li{
+  align-items: center;
+  list-style: number;
+  margin-bottom: 10px;
+}
+
+
+.mensaje-delete{
+  font-family: 'Cinzel', serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #008000; /* color verde oscuro */
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  box-shadow: 0px 0px 10px 5px rgba(255, 192, 203, 0.8), 
+              0px 0px 20px 10px rgba(0, 191, 255, 0.6),
+              0px 0px 30px 15px rgba(255, 255, 0, 0.4);
+}
+
+
+.mensaje-limite{
+  font-family: 'Cinzel', serif;
+  font-size: 2rem;
+  text-align: center;
+  background-color: #c1df17;
+  padding: 1rem;
+  border: 2px solid #ff6666;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+
+}
+
+/*celular-phones*/
+@media screen and (max-width: 780px) {
+  .container {
+  flex-direction: column;
+  align-items: center;
+  }
+  .left, .right {
+  width: 100%;
+  }
+  .left label, .right label {
+  font-size: 2rem;
+  }
+  .civiles-frame, .mafia-frame {
+  width: 80%;
+  font-size: 250px;
+  }
+  .mensaje-rol{
+    font-size: 30px;
+  }
+}
